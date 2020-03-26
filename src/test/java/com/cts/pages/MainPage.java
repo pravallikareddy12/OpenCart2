@@ -8,23 +8,23 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class MainPage {
-	private static WebDriver driver;
+	private  WebDriver driver;
 	public MainPage(WebDriver driver) {
 		this.driver=driver;
 	}
-	public static void clickOnDesktops()
+	public  void clickOnDesktops()
 	{
 		driver.findElement(By.xpath("(//a[@class='dropdown-toggle'])[2]")).click();
 	}
 	
 	
-	public static void clickOnseeall()
+	public  void clickOnseeall()
 	{
 		Actions actions =new Actions(driver);
 	     actions.moveToElement(driver.findElement(By.xpath("//a[@class='see-all']"))).pause(1000).doubleClick().build().perform();
 	}
 	
-	public static String getDesktopTitle()
+	public  String getDesktopTitle()
 	{
 		String actualTitle=driver.findElement(By.linkText("Desktops")).getText();
 		return actualTitle;
@@ -32,32 +32,32 @@ public class MainPage {
 	
 	
 	
-	public static void clickOnLaptopsandNotebooks()
+	public  void clickOnLaptopsandNotebooks()
 	{
 		driver.findElement(By.linkText("Laptops & Notebooks")).click();
 	}
 	
 
-	public static void clickOnShowAll()
+	public  void clickOnShowAll()
 	{
 		Actions actions =new Actions(driver);
 	     actions.moveToElement(driver.findElement(By.linkText("Show All Laptops & Notebooks"))).pause(1000).doubleClick().build().perform();
 	}
 	
-	public static String getLaptopTitle()
+	public  String getLaptopTitle()
 	{
 		String actualTitle=driver.findElement(By.xpath("//h2[text()='Laptops & Notebooks']")).getText();
 		return actualTitle;
 	}
 	
 	
-	public static void clickOnComponents()
+	public  void clickOnComponents()
 	{
 		driver.findElement(By.linkText("Components")).click();
 	}
 	
 	
-	public static void clickOnMonitors()
+	public  void clickOnMonitors()
 	{
 		Actions actions =new Actions(driver);
 	     actions.moveToElement(driver.findElement(By.linkText("Monitors (2)"))).pause(1000).doubleClick().build().perform();
@@ -65,36 +65,36 @@ public class MainPage {
 
 	
 	
-	public static String getComponentsTitle()
+	public  String getComponentsTitle()
 	{
 		String actualTitle=driver.findElement(By.xpath("//h2[text()='Monitors']")).getText();
 		return actualTitle;
 	}
 	
 	
-	public static void clickOnTablets()
+	public  void clickOnTablets()
 	{
 		driver.findElement(By.linkText("Tablets")).click();
 	}
 	
-	public static String getTabletsTitle()
+	public  String getTabletsTitle()
 	{
 		String actualTitle=driver.findElement(By.xpath("//h2[text()='Tablets']")).getText();
 		
 		return actualTitle;
 		
 	}
-	public static void clickOnAddtoCart() {
+	public  void clickOnAddtoCart() {
 		driver.findElement(By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[7]")).click();
 	}
 	
-	public static void ClickOnShoppingCart()
+	public  void ClickOnShoppingCart()
 
 	{
 		driver.findElement(By.xpath("(//i[@class='fa fa-shopping-cart'])[1]")).click();
 	}
 	
-	public static String getShoppingCartTitle()
+	public  String getShoppingCartTitle()
 	{
 		String actualTitle=driver.findElement(By.linkText("Samsung Galaxy Tab 10.1")).getText();
 		return actualTitle;
