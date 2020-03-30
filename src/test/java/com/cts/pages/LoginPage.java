@@ -16,12 +16,12 @@ public class LoginPage {
 			this.driver=driver;
 		}
 
-	public  void enteremail(String email)
+	public  void enterEmail(String email)
 	{
 	driver.findElement(emailLocator).sendKeys(email);
 	}
 
-	public  void enterpassword(String password)
+	public  void enterPassword(String password)
 	{
 	driver.findElement(passwordLocator).sendKeys(password);
 	}
