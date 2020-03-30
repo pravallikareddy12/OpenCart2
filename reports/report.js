@@ -44,6 +44,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
@@ -82,6 +85,9 @@ formatter.match({
   "location": "com.cts.stepdefinitions.StepDefinitions.i_should_get_all_Desktops()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.background({
@@ -124,6 +130,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
@@ -164,6 +173,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
@@ -202,6 +214,9 @@ formatter.match({
   "location": "com.cts.stepdefinitions.StepDefinitions.i_should_get_all_Tablets()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -274,6 +289,9 @@ formatter.match({
   "location": "com.cts.stepdefinitions.StepDefinitions.i_should_get_the_products_which_I_added_into_the_cart()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
